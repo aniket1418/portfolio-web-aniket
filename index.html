@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Aniket Mehta's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a Full stack developer and I specialize in creating user-friendly, responsive and accessible application. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<!-- TODO-->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aniket Mehta's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am a Full stack developer and I specialize in creating user-friendly, responsive and accessible application. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!--TODO-->
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aniket Mehta's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a Full stack developer and I specialize in creating user-friendly, responsive and accessible application. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Aniket Mehta's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Experience</a></li>
+          <li class="nav-item"><a href="#blog">See Blog</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Aniket Mehta</span>
+            <span>Full Stack Engineer</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            A FullStack Software Engineer and Problem Solver
+            always love to fight for the best solution for the product.
+          </p>
+
+          <div class="header-btns">
+            <a href="https://www.linkedin.com/in/aniket-mehta-499698148/" class="btn btn-cta">Connect with me</a>
+            <a href="https://drive.google.com/file/d/1seCD-XIkzorPD8coosWaCwMri2KhH_yc/view?usp=drive_link" class="btn btn-secondary">My Resume</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Professional Experience..</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div>
+                <h2>CureBay, Software Engineer - Mid (SD2)</h2>
+                <p style="font-size: 18px;"><i>February 2024 - Present</i></p>
+                <p style="font-size: 15px; margin-top: 15px;">
+                  <ul>
+                    <li>Developed and contributed for the migration of patient data from MySQL to SkyFlow 3rd Party data warehouse. Where encrypting of the data fields and decrypting while hitting to UI</li>
+                    <li>Developed and contributed to the Facial Recognitions of the Patient while visiting to the clinic, while having the regular checkup. So basically this reduces the pain of the people seating at the registration doors. This one click method allow receptionist to register and fetch the patient data. With the help of AWS Rekognition and service is being handled with springboot</li>
+                    <li>Developed and contributed to new feature implmentation to shape the health care more better way.</li>
+                  </ul>
+                </p>
+                <p style="margin-top: 10px; font-size: 20px; font-style: italic; font-weight: 600;">Key Skills - Springboot, JAVA, Javascript, React.js, MySQL</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="work-boxes">
+            <div class="work-box">
+              <div>
+                <h2>Oracle Health - Software Engineer</h2>
+                <p style="font-size: 18px;"><i>October 2021 - January 2024</i></p>
+                <p style="font-size: 15px; margin-top: 15px;">
+                  <ul>
+                    <li>Participated in the evolution of the NPWR mobile application, shaping a new strategic direction.</li>
+                    <li>Added over 500 lines of code to the NPWR development, driving its growth..</li>
+                    <li>Automated the Snowflake token generation process, achieving continuous integration and deployment and resulting in a 80% increase in overall software delivery speed and reduces 60% of development time to generate token.</li>
+                    <li>Identified and resolved 25+ bottlenecks and bugs, ensuring smooth operation, optimal performance and follows the SLDC.</li>
+                    <li>Actively participated in 100+ code reviews to ensure code quality and system stability.</li>
+                    <li>Provided Tier 2 support for 3+ applications (break fix, data changes and investigations). And as a part of support continuously fixes 100+ CVE's for the services, so that it should be vulnerability free. </li>
+                    <li>Engaged with stakeholders at different seniority levels, facilitating the comprehension of project prerequisites and successful delivery of software solutions.</li>
+                    <li>Collaborated with 10+ stakeholders to define and meet project requirements, resulting in a 20% reduction in development time.</li>
+                    <li>Took an active role in deploying applications and services to production environments, ensuring seamless operational integration.</li>
+                    <li>Played a key role in migrating the app by updating AWS Aurora MySQL, Ruby, and Rails components, enhancing system performance and security.</li>
+                  </ul>
+                </p>
+                <p style="margin-top: 10px; font-size: 20px; font-style: italic; font-weight: 600;">Key Skills - Debugging · Back-End Web Development · Agile Development · J2EE Application Development · Spring MVC · Spring Boot · Maven · Software Development · Postman API · React.JS · Docker · Kubernetes · Java · Spinnaker · Splunk · AWS · S3  · OCI</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="work-boxes">
+            <div class="work-box">
+              <div>
+                <h2>Smartly Built, Software engineer trainee</h2>
+                <p style="font-size: 18px;"><i>April 2021 - October 2021</i></p>
+                <p style="font-size: 15px; margin-top: 15px;">
+                  <ul>
+                    <li>Participated in the evolution of the NPWR mobile application, shaping a new strategic direction.</li>
+                    <li>Added over 500 lines of code to the NPWR development, driving its growth.</li>
+                    <li>Established the CI/CD pipeline for streamlined project operations..</li>
+                    <li>Engaged in 70+ code reviews, upholding the highest quality standards.</li>
+                  </ul>
+                </p>
+                <p style="margin-top: 10px; font-size: 20px; font-style: italic; font-weight: 600;">Skills - Angular JS, Javascript, Frontend Development, Mobile App Development, Debugging CI CD, Jenkins, Github, Git, Docker.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="work-boxes">
+            <div class="work-box">
+              <div>
+                <h2>CureBay - Health Care Industry</h2>
+                <p style="font-size: 18px;"><i>February 2024 - Present</i></p>
+                <p style="font-size: 15px; margin-top: 15px;">
+                  <ul>
+                    <li>Developed and contributed for the migration of patient data from MySQL to SkyFlow 3rd Party data warehouse. Where encrypting of the data fields and decrypting while hitting to UI</li>
+                    <li>Developed and contributed to the Facial Recognitions of the Patient while visiting to the clinic, while having the regular checkup. So basically this reduces the pain of the people seating at the registration doors. This one click method allow receptionist to register and fetch the patient data. With the help of AWS Rekognition and service is being handled with springboot</li>
+                    <li>Developed and contributed to new feature implmentation to shape the health care more better way.</li>
+                  </ul>
+                </p>
+                <p style="margin-top: 10px; font-size: 20px; font-style: italic; font-weight: 600;">Key Skills - Springboot, JAVA, Javascript, React.js, MySQL</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+
+
+      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Toolkit</h2>
+          <div class="skills-imgs">
+                <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy" title="React">
+                <img src="assets/images/skills/spring.png" alt="React" class="skills-img" loading="lazy" title="React">
+                 <img src="assets/images/skills/typescript.webp" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
+                 <img src="assets/images/skills/next-js.webp" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+                 <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+                 <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                 <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
+
+      <section>
+        <h2 class="h2">Education</h2>
+        <div class="container">
+          <div class="work-boxes">
+            <div class="work-box">
+              <div>
+                <h2>MS in Computer Science - WOOLF University</h2>
+                <p style="font-size: 18px;"><i>October 2023 - April 2025</i></p>
+                <p style="font-size: 15px; margin-top: 15px;">
+                  <ul>
+                    <li>Learning Data Structure and algorithm</li>
+                    <li>Web applications concepts</li>
+                    <li>Software engineering fundamentals</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+
+            <div class="work-box">
+              <div>
+                <h2>B.Tech in Computer Science - JAIN University</h2>
+                <p style="font-size: 18px;"><i>August 2017 - July 2021</i></p>
+                <p style="font-size: 15px; margin-top: 15px;">
+                  <ul>
+                    <li>Data Structure and algorithm</li>
+                    <li>Web applications concepts</li>
+                    <li>Computer Networks, OS and DBMS</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                As a software engineer, I construct web interfaces and design
+                systems with a special love for accessibility and the
+                performance. I tend to code things from scratch and enjoy
+                bringing ideas to life.
+              </p>
+              <p class="contact-text">
+                Love to work on the complex problems, which can lead to a great buisness icons.
+              </p>
+              <!-- Replace src with your signatures and name -->
+              <img
+                src="assets/images/signatures.png"
+                alt="Syed Mohsin"
+                class="signatures"
+                loading="lazy"
+              />
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/aniket1418" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Codepen" href="https://github.com/aniket1418" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/codepen.svg"
+                    alt="Codepen"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/aniket-mehta-499698148/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Twitter" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="https://github.com/aniket1418">Aniket Metha.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
